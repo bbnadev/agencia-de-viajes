@@ -22,3 +22,19 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 INSERT INTO usuario (nombre, apellido, email, password_hash, rolId) VALUES 
 ("John", "Doe", "email@example.com", "", 1);
+
+
+CREATE TABLE IF NOT EXISTS `destino` (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(55) NOT NULL,
+    descripcion VARCHAR(255) DEFAULT NULL,
+    costo DECIMAL(65, 2)
+);
+
+CREATE TABLE IF NOT EXISTS `actividad` (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(55) NOT NULL,
+    descripcion VARCHAR(255) DEFAULT NULL,
+    destinoId INT,
+	FOREIGN KEY (destinoId) REFERENCES Destino(id) ON DELETE CASCADE
+);
