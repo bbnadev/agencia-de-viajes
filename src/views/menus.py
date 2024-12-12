@@ -5,17 +5,9 @@ MENUS: dict = {
         "q": "Salir"
     },
     "admin": {
-        "1": "Gestionar Roles",
-        "2": "Gestionar Destinos",
-        "3": "Gestionar Paquetes Turísticos",
-        "4": "Gestionar Actividades",
-        "q": "Salir"
-    },
-    "admin.roles": {
-        "1": "Listar roles",
-        "2": "Crear rol",
-        "3": "Actualizar rol",
-        "4": "Eliminar rol",
+        "1": "Gestionar Destinos",
+        "2": "Gestionar Paquetes Turísticos",
+        "3": "Gestionar Actividades",
         "q": "Salir"
     },
     "admin.destinos": {
@@ -25,18 +17,22 @@ MENUS: dict = {
         "4": "Eliminar destino",
         "q": "Salir"
     },
+    "admin.destinos.actualizar": {
+        "1": "Actualizar Destino",
+        "2": "Actualizar Actividades",
+        "q": "Salir"
+    },
+    "admin.destinos.actividades": {
+        "1": "Agregar actividades",
+        "2": "Eliminar actividad",
+        "3": "Modificar actividad",
+        "q": "Salir"
+    },
     "admin.paquetes": {
         "1": "Listar paquetes",
         "2": "Crear paquete",
         "3": "Actualizar paquete",
         "4": "Eliminar paquete",
-        "q": "Salir"
-    },
-    "admin.actividades": {
-        "1": "Listar actividades",
-        "2": "Crear actividad",
-        "3": "Actualizar actividad",
-        "4": "Eliminar actividad",
         "q": "Salir"
     },
     "admin.usuario": {
@@ -47,9 +43,7 @@ MENUS: dict = {
         "q": "Salir"
     },
     "user": {
-        "1": "Ver destinos",
-        "2": "Ver paquetes turísticos",
-        "3": "Ver actividades",
+        "1": "Ver Paquetes Turísticos",
         "q": "Salir"
     }
 }
