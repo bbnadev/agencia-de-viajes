@@ -58,13 +58,13 @@ def main():
                                                'MENÚ PAQUETES TURÍSTICOS')
                                     match input("> "):
                                         case "1":
-                                            print("Listar paquetes")
+                                            admPaquetesView.listar()
                                         case "2":
-                                            print("Crear paquete")
+                                            admPaquetesView.crear()
                                         case "3":
-                                            print("Actualizar paquete")
+                                            admPaquetesView.actualizar()
                                         case "4":
-                                            print("Eliminar paquete")
+                                            admPaquetesView.eliminar()
                                         case "q":
                                             clear_screen()
                                             print(
