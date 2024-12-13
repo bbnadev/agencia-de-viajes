@@ -54,3 +54,12 @@ PRIMARY KEY (paqueteId, destinoId),
 FOREIGN KEY (paqueteId) REFERENCES PaqueteTuristico(id) ON DELETE CASCADE,
 FOREIGN KEY (destinoId) REFERENCES Destino(id)
 );
+
+CREATE TABLE Reserva (
+userId INT NOT NULL,
+paqueteId INT NOT NULL,
+PRIMARY KEY (userId, paqueteId),
+FOREIGN KEY (userId) REFERENCES Usuario(id),
+FOREIGN KEY (paqueteId) REFERENCES PaqueteTuristico(id) ON DELETE CASCADE,
+fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP
+);
