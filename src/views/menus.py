@@ -7,7 +7,6 @@ MENUS: dict = {
     "admin": {
         "1": "Gestionar Destinos",
         "2": "Gestionar Paquetes Turísticos",
-        "3": "Gestionar Actividades",
         "q": "Salir"
     },
     "admin.destinos": {
@@ -33,6 +32,16 @@ MENUS: dict = {
         "2": "Crear paquete",
         "3": "Actualizar paquete",
         "4": "Eliminar paquete",
+        "q": "Salir"
+    },
+    "admin.paquetes.actualizar": {
+        "1": "Actualizar Paquete",
+        "2": "Actualizar Destinos",
+        "q": "Salir"
+    },
+    "admin.paquetes.destinos": {
+        "1": "Agregar destino",
+        "2": "Eliminar destino",
         "q": "Salir"
     },
     "admin.usuario": {
