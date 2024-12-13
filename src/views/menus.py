@@ -53,6 +53,14 @@ MENUS: dict = {
     },
     "user": {
         "1": "Ver Paquetes Turísticos",
+        "2": "Ver mis Reservas",
+        "3": "Eliminar Reserva",
+        "q": "Salir"
+    },
+    "user.paquetes": {
+        "1": "Ver Todos los Paquetes Turísticos",
+        "2": "Ver Paquete Turístico por rango de fechas",
+        "3": "Reservar Paquete Turístico",
         "q": "Salir"
     }
 }
