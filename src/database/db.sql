@@ -38,3 +38,19 @@ CREATE TABLE IF NOT EXISTS `actividad` (
     destinoId INT,
 	FOREIGN KEY (destinoId) REFERENCES Destino(id) ON DELETE CASCADE
 );
+
+
+CREATE TABLE IF NOT EXISTS `PaqueteTuristico` (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+    fechaInicio DATE NOT NULL,
+    fechaFin DATE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS `PaqueteXDestino` (
+paqueteId INT NOT NULL,
+destinoId INT NOT NULL,
+PRIMARY KEY (paqueteId, destinoId),
+FOREIGN KEY (paqueteId) REFERENCES PaqueteTuristico(id) ON DELETE CASCADE,
+FOREIGN KEY (destinoId) REFERENCES Destino(id)
+);
